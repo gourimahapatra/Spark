@@ -9,6 +9,9 @@ import test.dataframe.WorkWithDataframe
 
 import gouri.test.dataframe.dataframeExample;
 import gouri.test.dataframe.dataframeExample2;
+import gouri.test.dataframe.pi
+import gouri.test.combinerex
+
 import example.session.GetSession
 
 /**
@@ -17,24 +20,16 @@ import example.session.GetSession
  */
 object App extends App {
   val ss = GetSession.GetSparkSession()
+  combinerex.combinerex.combine(ss)
+  //pi.pi(ss)
+  //wordCount(ss)
   //dataframeExample.df(ss);
-  dataframeExample2.example(ss)
 
-  //  FileUtils.deleteQuietly(new File("gouri"))
-  //
+  //dataframeExample2.example(ss)
+
+  //  FileUtils.deleteQuietly(new File("gouri")
   //  val tmp = File.createTempFile("gouri", "tmp")
   //  tmp.deleteOnExit()
-
-  //  var count = 0
-  //  for (i <- 1 to 100000) {
-  //    val x = random * 2 - 1
-  //    val y = random * 2 - 1
-  //    if (x * x + y * y <= 1) count += 1
-  //  }
-  //  println(s"Pi is roughly ${4 * count / 100000.0}")
-
   //  WorkWithDataframe.dfoperation(ss)
-  //  wordCount(ss)
-
   //streaming.streaming.str
 }
