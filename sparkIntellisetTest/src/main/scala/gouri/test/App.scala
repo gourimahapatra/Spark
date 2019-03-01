@@ -7,10 +7,11 @@ import gouri.test.streaming.streaming
 import org.apache.commons.io.FileUtils
 import test.dataframe.WorkWithDataframe
 
-import gouri.test.dataframe.dataframeExample;
-import gouri.test.dataframe.dataframeExample2;
+import gouri.test.dataframe.dataframeExample
+import gouri.test.dataframe.dataframeExample2
 import gouri.test.dataframe.pi
 import gouri.test.combinerex
+import gouri.test.dataframe.mape
 
 import example.session.GetSession
 
@@ -20,7 +21,10 @@ import example.session.GetSession
  */
 object App extends App {
   val ss = GetSession.GetSparkSession()
-  combinerex.combinerex.combine(ss)
+  mape.mape(ss)
+  //flatmap.flatmap(ss)
+
+  //combinerex.combinerex.combine(ss)
   //pi.pi(ss)
   //wordCount(ss)
   //dataframeExample.df(ss);
