@@ -1,0 +1,50 @@
+
+Pages 
+
+Skip to end of banner 
+
+
+
+Go to start of banner 
+
+How To Install Apache Spark on Windows 
+ 
+
+ 
+
+
+   Skip to end of metadata 
+
+
+
+Prerequisite
+•JDK 8 is installed
+•Environment variable JAVA_HOME is set correctly
+
+Step-by-step guide
+
+
+1.Download
+a.Spark from http://spark.apache.org/downloads.htmli.Release: 2.0.2 (Nov 14 2016)
+ii.Package Type: Pre-built for Hadoop 2.6
+
+b.hadoop-winutils-2.6.0.zip from https://osdn.jp/projects/win-hadoop/releases/
+
+
+2.Install
+a.Extract spark-2.0.2-bin-hadoop2.6.tgz to C:\devi.Tools like bsdtar.exe, MSYS, Cygwin can be used to extract tgz file
+
+b.Set environment variable SPARK_HOME=C:\dev\spark-2.0.2-bin-hadoop2.6
+c.Extract hadoop-winutils-2.6.0.zip to C:\dev\hadoop-2.6.0\bin
+d.Set environment variable HADOOP_HOME=C:\dev\hadoop-2.6.0
+
+3.Verifya.Open Command Prompt
+b.cd %SPARK_HOME%
+c.bin\run-example SparkPi 10
+d.OK if you can see something like below (the value will change every time)
+...
+Pi is roughly 3.142688
+...
+
+4.Referencea.(In Japanese) http://hired.hateblo.jp/entry/2015/12/10/183000
+
